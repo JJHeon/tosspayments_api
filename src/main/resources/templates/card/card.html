@@ -24,12 +24,11 @@
         var activeTossPayments = () => {
             tossPayments.requestPayment('CARD', {
                 amount: 5000,
-                orderId: 1,
-                orderName: '상품명',
-                customerName: '고객이름',
-                customerEmail: '주문자_이메일',
-                successUrl: 'http://localhost:8080/success',
-                failUrl: 'http://localhost:8080/fail'
+                orderId: 'asdjadj2asdg34t2jasdm',
+                orderName: '사과1ㄹㅇ',
+                customerName: 'jjh',
+                successUrl: 'http://localhost:8080/card/success',
+                failUrl: 'http://localhost:8080/card/fail'
             })
                 .catch(function (error) {
                     console.log("Fail!");

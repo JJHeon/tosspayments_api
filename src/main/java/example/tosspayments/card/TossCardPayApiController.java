@@ -31,8 +31,8 @@ public class TossCardPayApiController {
                 request.getOrderId(),
                 request.getOrderName(),
                 request.getCustomerName(),
-                "http://localhost:8080/success",
-                "http://localhost:8080/fail"
+                "http://localhost:8080/card/success",
+                "http://localhost:8080/card/fail"
         );
         return  response;
     }
